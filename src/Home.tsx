@@ -230,7 +230,7 @@ const Home = (props: HomeProps) => {
   };
   // let startTime = ('11/04/2021T13:00:00.000+0000')
 //  let startTime = ('11/04/2021T13:00:00.000+0000').replace(/(+\d{2})(\d{2})$/, "$1:$2")
-  const difference = +dayjs.utc('2021-10-04T13:00:00.000+0000', 'YYYY-MM-DDTHH:mm:ss.000ZZ') - +new Date();
+  const difference = +dayjs.utc('2021-11-04T12:12:00.000+0000', 'YYYY-MM-DDTHH:mm:ss.000ZZ') - +new Date();
 
   useEffect(() => {
     const id = setTimeout(() => {
@@ -296,7 +296,7 @@ const Home = (props: HomeProps) => {
           {!wallet ? (
            <div className="connect-wallet">
               <h1>MMA MONKEY DOJO</h1>
-              <span>MINT YOUR MMA MONKEY</span>
+              <span>MINT YOUR MMA MONKEY</span> 
             <ConnectButton fullWidth>Mint Now</ConnectButton>
           </div>
           ) :(
@@ -304,8 +304,7 @@ const Home = (props: HomeProps) => {
               disabled={isSoldOut || isMinting || !isActive}
               onClick={onMint}
               variant="contained"
-             
-              
+         
             >
               {isSoldOut ? (
                 "SOLD OUT"
