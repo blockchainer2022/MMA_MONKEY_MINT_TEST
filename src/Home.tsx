@@ -271,8 +271,8 @@ const Home = (props: HomeProps) => {
        MMA monkeys ready to fight for the championship.</p>
 
        <div className={classes.icon}>
-          <a target="_blank" href="https://discord.gg/MFHAh4ur"><img src={Discord} alt="" /></a>
-          <a target="_blank" href="https://twitter.com/MMAMonkeysNFT"><img src={Twitter} alt="" /></a>
+          <a target="_blank" rel="noreferrer" href="https://discord.gg/MFHAh4ur"><img src={Discord} alt="" /></a>
+          <a target="_blank" rel="noreferrer" href="https://twitter.com/MMAMonkeysNFT"><img src={Twitter} alt="" /></a>
        </div>
         <h4>Mint</h4>
         <p  style={{marginTop:"0"}}>mint time is November 4th 1:00 PM UTC time</p>
